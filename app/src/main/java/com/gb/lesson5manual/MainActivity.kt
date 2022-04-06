@@ -31,11 +31,6 @@ class MainActivity : AppCompatActivity() {
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.ok.setOnClickListener(clickListener)
-        /*if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction()
-                .replace(R.id.webViewContainer, WebViewFragment.newInstance()).commit()
-        }*/
-
     }
 
     private var clickListener: View.OnClickListener = object : View.OnClickListener {
